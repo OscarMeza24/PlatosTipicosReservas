@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00796b; /* Verde mar tropical */
+  background-color: #00607e;
   padding: 1rem 2rem;
   color: white;
   font-family: "Segoe UI", sans-serif;
@@ -34,7 +34,7 @@
 }
 
 .navbar-links li a:hover {
-  color: #ffe66d; /* Amarillo cálido */
+  color: #6d94ff; /* Amarillo cálido */
 }
 
 /* Responsive */
