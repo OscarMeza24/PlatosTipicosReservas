@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"; // ✅ Importa el Footer
+import Mapa from "./pages/Mapa";
+import Platos from "./pages/Platos";
+import Reservas from "./pages/Reservas";
+import Home from "./pages/Home";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mapa" element={<Mapa />} />
+          <Route path="/platos" element={<Platos />} />
+          <Route path="/reservas" element={<Reservas />} />
+        </Routes>
+      </main>
+      <Footer /> {/* ✅ Aquí se muestra el Footer en todas las páginas */}
+    </Router>
   );
 }
 
