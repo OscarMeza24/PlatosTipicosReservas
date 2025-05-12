@@ -16,7 +16,7 @@ export default function Footer() {
           <strong>Contáctanos:</strong>
         </p>
         <p>Email: info@rutagastro.com</p>
-        <p>Tel: +593 999 000 000</p>
+        <p>Tel: +593 978601829</p>
       </div>
 
       <div className="footer-right">

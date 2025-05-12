@@ -29,10 +29,7 @@ export default function Mapa() {
           zoom={7}
           style={{ height: "100%", width: "100%" }}
         >
-          <TileLayer
-            attribution="&copy; OpenStreetMap contributors"
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           <Marker position={[-2.15, -79.9]}>
             <Popup>
               Restaurante El Marisco Feliz
